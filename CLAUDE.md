@@ -38,7 +38,7 @@ components/
   sections/                 按四幕叙事分组，每个文件对应一个内容区块
     intro/                  Hero 背景 Tension(矛盾) Problem(认知翻译成本)
     thesis/                 Insight(核心洞察) Thesis(新旧流程对比) Principles(三原则)
-    solution/               Storyboard RhythmEditing(节奏编辑) DirectorMode(导演模式)
+    solution/               Storyboard RhythmEditing(直接操作) DirectorMode(连贯性)
     outro/                  Prototype(V1-V4) Value(价值验证) Impact(影响) Reflection(反思)
 ```
 

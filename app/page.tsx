@@ -16,9 +16,7 @@ import RhythmEditing from "@/components/sections/solution/RhythmEditing";
 import DirectorMode from "@/components/sections/solution/DirectorMode";
 
 // ── Outro ──
-import Prototype from "@/components/sections/outro/Prototype";
 import Value from "@/components/sections/outro/Value";
-import Impact from "@/components/sections/outro/Impact";
 import Reflection from "@/components/sections/outro/Reflection";
 import Footer from "@/components/ui/Footer";
 
@@ -36,9 +34,9 @@ export default function Home() {
         <Storyboard />
         <RhythmEditing />
         <DirectorMode />
-        <Prototype />
+
         <Value />
-        <Impact />
+
         <Reflection />
       </main>
       <Footer />

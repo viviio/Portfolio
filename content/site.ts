@@ -143,7 +143,7 @@ export const storyboard = {
 export const rhythm = {
   eyebrow: "Interaction · Demo2",
   kicker: "Direct Manipulation",
-  title: { before: "拖拽分镜，", highlight: "直接操作", after: "故事节奏" },
+  title: { before: "原子分镜，", highlight: "直接操作", after: "故事节奏" },
   benefits: [
     "拖动镜头卡片即可重排叙事顺序，无需改写 Prompt",
     "节奏变化自动联动时长、密度与转场",
@@ -158,14 +158,22 @@ export const rhythm = {
   },
 };
 
-// ── 导演模式 ──
-export const director = {
-  eyebrow: "Director Mode · 导演模式",
-  title: "AI 负责生成，导演负责判断",
-  controls: ["镜头距离", "构图", "情绪", "运镜", "时长"],
-  closer: ["AI 负责执行。", "创作者负责表达。"],
-  demoRatio: "16 / 9",
-  demoLabel: "单分镜导演控制面板 Demo",
+// ── 连贯性 ──
+export const coherence = {
+  eyebrow: "Coherence · Demo3",
+  kicker: "Coherence",
+  title: { before: "组合输入", highlight: " 串联故事", after: "" },
+  benefits: [
+    "宫格图一次性输入，AI 工作流保持镜头间叙事连贯",
+    "在完整故事流里编辑，减少跳切与断层",
+  ],
+  closer: "连贯镜头聚散有度，既保持叙事衔接，又给足控制感",
+  demoImage: {
+    src: "/images/solution/test3.jpg",
+    alt: "连贯性编辑：四张分镜合并为一张输入，保持叙事衔接",
+    width: 3200,
+    height: 2074,
+  },
 };
 
 // ── Prototype V1–V4 ──
@@ -182,18 +190,32 @@ export const prototype = {
 
 // ── 价值验证 ──
 export const value = {
-  eyebrow: "Validation · 价值验证",
-  title: "从两小时到十分钟",
+  eyebrow: "Validation · 价值",
+  title: "加速前序画面Prompt调试时间",
+  lead: "基于自己做短片创意测试的实测感受——真正减掉的是脑内画面 ↔ 文字 ↔ 画面之间的反复翻译。",
   before: {
-    label: "Before · 传统 AI 创作",
-    steps: ["编写 Prompt", "编写剧本", "修改剧本", "绘制分镜"],
-    time: "约 2 小时",
+    label: "Before",
+    steps: [
+      "Prompt 多轮试错，才能把画面说清楚",
+      "剧本改完，还要重新想象分镜",
+      "分镜和最终视频经常对不上",
+      "生视频前不得不逐格人工校对",
+    ],
+    time: "一个想法折腾一下午",
+    timeNote: "大量时间花在来回对齐",
   },
   after: {
-    label: "After · Storyboard First",
-    steps: ["输入灵感", "调整故事板", "一键生成"],
-    time: "约 10 分钟",
+    label: "After",
+    steps: [
+      "先出分镜宫格，画面就是讨论语言",
+      "拖拽改节奏，不必重写 Prompt",
+      "连贯性校验前置，减少返工",
+      "结构满意后，再进视频生成",
+    ],
+    time: "粗稿验证约 1 小时",
+    timeNote: "视频生成仍是重工序",
   },
+  note: "",
 };
 
 // ── 项目影响 ──
@@ -208,19 +230,20 @@ export const impact = {
 export const reflection = {
   eyebrow: "Reflection · 小小的思考",
   lines: [
-    "AI 已经能够生成故事。",
-    "下一步的问题不再是：如何写出更好的 Prompt。",
-    "而是：如何更自然地表达脑中的电影。",
+    "AI 在激发创意上永远超乎意料。",
+    "很多人都在思考下一步的创作方式是什么样子。",
+    "以上只是我对脑海中画面表达的理解：如何更自然地定位想象起点。",
+    "也许新的交互范式可能更接近导演的创作方式。",
   ],
-  punch: "因为人们，从来不是用文字做梦的。",
+  punch: "因为人们从来不是用文字做梦的。",
 };
 
 // ── Footer ──
 export const footer = {
-  signature: "妙创 · 项目分享",
+  signature: "妙创 · 项目分享 · 感谢观看",
   links: [
     
     { label: "返回顶部", href: "#top" },
   ],
-  note: "Copyright © 2026 [wes]. All Rights Reserved.",
+  note: "Copyright © 2026 [wesliang]. All Rights Reserved.",
 };

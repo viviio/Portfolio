@@ -27,7 +27,7 @@ export default function Reflection() {
         </div>
         <Reveal delay={0.5}>
           <p className="mt-16 font-display text-[clamp(2rem,6vw,4.5rem)] font-bold leading-tight tracking-tight text-ink">
-            因为人们，
+            因为人们
             <br className="md:hidden" />
             从来不是
             <span className="text-accent">用文字做梦</span>的。
