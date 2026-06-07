@@ -238,6 +238,25 @@ export const reflection = {
   punch: "因为人们从来不是用文字做梦的。",
 };
 
+// ── 幕后花絮 ──
+// 视频放入 public/videos/，src 以 /videos/ 开头（站内路径）
+export const behindTheScenes = {
+  eyebrow: "Behind the Scene · Vibe Coding ",
+  title: "幕后花絮·VibeCoding打磨动效片段",
+  note: "",
+  videos: [
+    { id: "01", label: "Demo 01", ratio: "16 / 9", src: "/videos/01.mp4" },
+    { id: "02", label: "Demo 02", ratio: "9 / 16", src: "/videos/02.mp4" },
+    { id: "03", label: "Demo 03", ratio: "4 / 3", src: "/videos/03.mp4" },
+    { id: "04", label: "Demo 04", ratio: "1 / 1", src: "/videos/04.mp4" },
+    { id: "05", label: "Demo 05", ratio: "16 / 9", src: "/videos/05.mp4" },
+    { id: "06", label: "Demo 06", ratio: "16 / 9", src: "/videos/06.mp4" },
+    { id: "07", label: "Demo 07", ratio: "16 / 9", src: "/videos/07.mp4" },
+    { id: "08", label: "Demo 08", ratio: "16 / 9", src: "/videos/08.mp4" },
+
+  ],
+};
+
 // ── Footer ──
 export const footer = {
   signature: "妙创 · 项目分享 · 感谢观看",

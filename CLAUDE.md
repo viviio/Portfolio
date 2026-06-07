@@ -34,12 +34,13 @@ components/
     Placeholder.tsx         空白图/视频占位(标比例与说明，待替换真素材)
     FlowDiagram.tsx         等宽流程图(灵感↓剧本↓...)，复用于传统流程/损耗/新旧对比
     StoryboardCards.tsx     分镜卡片网格(导演桌上的分镜)
+    VideoTile.tsx           花絮视频单元(有 src 播视频，无则占位)
     Footer.tsx              极简署名 + 链接
   sections/                 按四幕叙事分组，每个文件对应一个内容区块
     intro/                  Hero 背景 Tension(矛盾) Problem(认知翻译成本)
     thesis/                 Insight(核心洞察) Thesis(新旧流程对比) Principles(三原则)
     solution/               Storyboard RhythmEditing(直接操作) DirectorMode(连贯性)
-    outro/                  Prototype(V1-V4) Value(价值验证) Impact(影响) Reflection(反思)
+    outro/                  Value(价值验证) Reflection(反思) BehindTheScenes(幕后花絮瀑布流)
 ```
 
 ## 依赖与数据流

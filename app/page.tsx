@@ -18,6 +18,7 @@ import DirectorMode from "@/components/sections/solution/DirectorMode";
 // ── Outro ──
 import Value from "@/components/sections/outro/Value";
 import Reflection from "@/components/sections/outro/Reflection";
+import BehindTheScenes from "@/components/sections/outro/BehindTheScenes";
 import Footer from "@/components/ui/Footer";
 
 export default function Home() {
@@ -38,6 +39,7 @@ export default function Home() {
         <Value />
 
         <Reflection />
+        <BehindTheScenes />
       </main>
       <Footer />
     </>
