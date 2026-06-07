@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 妙创作品表达站 · Story Before Script
 
-## Getting Started
+一个单页滚动叙事作品站，表达「故事应先于剧本」的 AI 时代故事创作范式设计论述。
 
-First, run the development server:
+灵感链：传统流程矛盾 → 认知翻译成本（Cognitive Translation Cost）→ 核心洞察 → Thesis: Story Before Script → 设计原则 → 方案与交互 → 原型 → 价值 → 反思。
+
+## 技术栈
+
+- Next.js 16（App Router, Turbopack）+ TypeScript
+- Tailwind CSS v4
+- Framer Motion（滚动动效）
+
+## 本地开发
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # 生产构建
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 结构概览
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `content/site.ts` — 全站文案与结构数据的单一真相源，改文案只动这里
+- `components/sections/<act>/` — 按四幕叙事（intro / thesis / solution / outro）分组的内容区块
+- `components/ui/` — 可复用呈现单元（Section / Reveal / Placeholder / FlowDiagram / StoryboardCards / Footer）
+- `components/nav/SectionNav.tsx` — 章节导航与阅读进度
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+架构细节见 [CLAUDE.md](./CLAUDE.md)。
 
-## Learn More
+## 待办
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 图片与视频目前为空白占位（`components/ui/Placeholder.tsx`），需替换为真实素材。
+- 「故事节奏编辑」与「导演控制面板」目前为静态展示，可进一步做成可拖拽交互。
