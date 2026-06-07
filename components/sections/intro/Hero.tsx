@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { hero } from "@/content/site";
 
@@ -31,7 +32,18 @@ export default function Hero() {
           {hero.eyebrow}
         </motion.p>
 
-        <h1 className="font-display text-[clamp(2.75rem,9vw,7.5rem)] font-bold leading-[1.02] tracking-tight">
+        <motion.div {...up(0.06)} className="mb-2">
+          <Image
+            src="/mc-logo.svg"
+            alt="妙创"
+            width={80}
+            height={80}
+            className="size-24 "
+            priority
+          />
+        </motion.div>
+
+        <h1 className="font-display text-[clamp(2.75rem,9vw,5.5rem)] font-medium leading-[1.2] tracking-tight">
           {hero.titleLines.map((line, i) => (
             <motion.span key={line} {...up(0.12 + i * 0.12)} className="block">
               {line}
