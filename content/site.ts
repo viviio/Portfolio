@@ -92,7 +92,7 @@ export const thesis = {
 // ── 设计原则 ──
 export const principles = {
   eyebrow: "Design Principles · 设计原则",
-  title: "三条贯穿始终的原则",
+  title: "设计原则",
   items: [
     {
       no: "01",
@@ -119,9 +119,9 @@ export const principles = {
 export const storyboard = {
   eyebrow: "Solution · 方案设计",
   kicker: "AI Storyboard First",
-  title: "不再先生成剧本，而是直接生成故事板",
-  inputLabel: "用户输入一个简单想法",
-  inputText: "一个女孩发现未来的自己",
+  title: { before: "AI直出线稿组，营造", highlight: " 画面感" },
+  inputLabel: "用户输入一个简单想法，AI像导演一样生成图文并茂的故事板",
+  inputText: "输入想法，输出图文并茂的故事板",
   cards: [
     { no: "01", beat: "相遇" },
     { no: "02", beat: "怀疑" },
@@ -130,7 +130,13 @@ export const storyboard = {
     { no: "05", beat: "真相" },
     { no: "06", beat: "告别" },
   ],
-  closer: "用户获得一个可视化的故事结构，如同导演桌上的分镜卡片。",
+  closer: "用户获得一个可视化的故事结构，如导演桌上的分镜卡片。",
+  demoImage: {
+    src: "/images/solution/test1.jpg",
+    alt: "故事板界面：剧本解析为分镜宫格图，同步生成视频预览",
+    width: 1024,
+    height: 663,
+  },
 };
 
 // ── 创新交互：故事节奏编辑器 ──
@@ -195,7 +201,7 @@ export const impact = {
 
 // ── Reflection ──
 export const reflection = {
-  eyebrow: "Reflection · 反思",
+  eyebrow: "Reflection · 小小的思考",
   lines: [
     "AI 已经能够生成故事。",
     "下一步的问题不再是：如何写出更好的 Prompt。",
@@ -206,10 +212,10 @@ export const reflection = {
 
 // ── Footer ──
 export const footer = {
-  signature: "妙创 · Story Before Script",
+  signature: "妙创 · 项目分享",
   links: [
-    { label: "原文参考", href: "https://diana.lu/point-n-talk" },
+    
     { label: "返回顶部", href: "#top" },
   ],
-  note: "图片与视频为占位素材，待替换。",
+  note: "Copyright © 2026 [wes]. All Rights Reserved.",
 };
