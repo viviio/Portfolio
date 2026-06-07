@@ -37,11 +37,7 @@ export default function Background() {
         </Reveal>
       </div>
 
-      <Reveal delay={0.1}>
-        <blockquote className="mt-24 border-l-2 border-accent pl-6 font-display text-2xl leading-snug text-ink md:mt-32 md:text-4xl">
-          {background.punch}
-        </blockquote>
-      </Reveal>
+     
     </Section>
   );
 }
