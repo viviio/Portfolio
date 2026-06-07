@@ -1,6 +1,6 @@
 import Section from "@/components/ui/Section";
 import Reveal from "@/components/ui/Reveal";
-import Placeholder from "@/components/ui/Placeholder";
+import MaskedImage from "@/components/ui/MaskedImage";
 import { tension } from "@/content/site";
 
 // ──────────────────────────────────────────────
@@ -44,19 +44,18 @@ export default function Tension() {
                 {ex.caption}
               </figcaption>
               <div className="order-1 md:order-2">
-                <Placeholder ratio={ex.ratio} label={ex.caption} />
+                <MaskedImage
+                  src={ex.src}
+                  alt={ex.caption}
+                  ratio={ex.ratio}
+                />
               </div>
             </figure>
           </Reveal>
         ))}
       </div>
 
-      <Reveal delay={0.1}>
-        <p className="mt-20 font-display text-3xl leading-relaxed md:text-5xl">
-          <span className="text-ink">{tension.closer[0]}</span>{" "}
-          <span className="text-ink-muted">{tension.closer[1]}</span>
-        </p>
-      </Reveal>
+
     </Section>
   );
 }

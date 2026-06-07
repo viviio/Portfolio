@@ -7,7 +7,6 @@ import Tension from "@/components/sections/intro/Tension";
 import Problem from "@/components/sections/intro/Problem";
 
 // ── Thesis ──
-import Insight from "@/components/sections/thesis/Insight";
 import Thesis from "@/components/sections/thesis/Thesis";
 import Principles from "@/components/sections/thesis/Principles";
 
@@ -32,7 +31,6 @@ export default function Home() {
         <Background />
         <Tension />
         <Problem />
-        <Insight />
         <Thesis />
         <Principles />
         <Storyboard />

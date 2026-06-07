@@ -36,21 +36,33 @@ export const tension = {
   eyebrow: "The Overlooked Conflict · 被忽视的矛盾",
   title: "我们对文字天然陌生，依赖个体的想象力",
   perceptions: ["画面", "镜头", "氛围", "情绪", "节奏"],
-  negate: "而不是一份完整的剧本。",
+  negate: "先阅读左边的文字，你对脑海里有对应的画面了吗？",
   examples: [
-    { ratio: "21 / 9", caption: "一个女孩站在雨夜的路灯下" },
-    { ratio: "21 / 9", caption: "一个老人打开尘封二十年的信件" },
-    { ratio: "21 / 9", caption: "一个少年第一次看到未来的自己" },
+    {
+      ratio: "16 / 9",
+      caption: "廊下全景。竹椅、旧茶壶。远处雾中有窑烟。老林佝偻的身影坐在椅上。",
+      src: "/images/tension/storyboard-1.png",
+    },
+    {
+      ratio: "16 / 9",
+      caption: "老林的手。停了。手指微微发颤。",
+      src: "/images/tension/storyboard-2.png",
+    },
+    {
+      ratio: "16 / 9",
+      caption: "纸的边角。一行清秀的字：你答应过我，要烧出最轻的那一只。 落款——阿秀。",
+      src: "/images/tension/storyboard-0.png",
+    },
   ],
-  closer: ["这些都是画面。", "不是文字。"],
+  closer: [" "],
 };
 
 // ── 问题定义：认知翻译成本 ──
 export const problem = {
   eyebrow: "Problem · 问题定义",
-  title: "AI 已经会写剧本，用户却仍被迫先写剧本",
+  title: "AI与人的沟通过程充满信息损失。",
   lossFlow: ["脑内画面", "转换成文字", "AI 理解文字", "重新生成画面"],
-  lossNote: "整个过程充满信息损失。",
+  lossNote: "于我而言，如果没有画面做锚点，故事想象就会像无根的浮萍，难以落地。",
   termZh: "认知翻译成本",
   termEn: "Cognitive Translation Cost",
   termDesc: "想法在「画面 → 文字 → 画面」的反复转译中被不断稀释。",
@@ -59,17 +71,21 @@ export const problem = {
 // ── 核心洞察 ──
 export const insight = {
   eyebrow: "Core Insight · 核心洞察",
-  quote: ["用户真正想编辑的不是剧本，", "而是脑中的电影。"],
+  quote: ["用户真正想编辑的不是剧本，", "而是脑中的电影画面。"],
   body: "在故事创作过程中，剧本只是媒介；故事画面才是创作者真正关心的对象。",
 };
 
 // ── Thesis ──
 export const thesis = {
   eyebrow: "Thesis · 主张",
-  titleZh: "故事，应该先于剧本",
+  titleZh: {
+    before: "如果AI剧创能像读 ",
+    strike: "漫画书",
+    after: " 一样呢？",
+  },
   titleEn: "Story Before Script",
-  body: "AI 时代的创作流程应该被重新定义。",
-  newFlow: { label: "重新定义", steps: ["灵感", "故事板", "剧情生成", "视频生成"] },
+  body: "自动生成连贯画面，图并茂地串联故事，直接进入画面编辑。",
+  newFlow: { label: "重新定义", steps: ["灵感", "分镜宫格", "节奏编排", "视频生成"] },
   oldFlow: { label: "传统流程", steps: ["灵感", "剧本", "故事板", "视频"] },
 };
 
@@ -81,20 +97,20 @@ export const principles = {
     {
       no: "01",
       en: "Visual First",
-      zh: "画面优先",
-      desc: "优先表达画面，而不是文字。用户可以直接从想象中的场景开始创作。",
+      zh: "画面感",
+      desc: "优先用低成本传达画面+文字。用户可以直接从想象中的场景开始创作。",
     },
     {
       no: "02",
-      en: "Story Before Script",
-      zh: "故事先于剧本",
-      desc: "先构建故事结构，后生成具体对白。",
+      en: "Coherence",
+      zh: "连贯性",
+      desc: "考虑构建故事结构的起承转合",
     },
     {
       no: "03",
       en: "Direct Manipulation",
       zh: "直接操作",
-      desc: "直接操作故事本身，而不是操作 Prompt。",
+      desc: "以分镜为操作锚点，减少 Prompt 依赖。",
     },
   ],
 };

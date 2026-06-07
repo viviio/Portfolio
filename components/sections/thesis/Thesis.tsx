@@ -1,3 +1,4 @@
+import { Grid2X2Check } from "lucide-react";
 import Section from "@/components/ui/Section";
 import Reveal from "@/components/ui/Reveal";
 import FlowDiagram from "@/components/ui/FlowDiagram";
@@ -7,16 +8,24 @@ import { thesis } from "@/content/site";
 // Thesis — 主张：Story Before Script，新旧流程并排对比
 // ──────────────────────────────────────────────
 export default function Thesis() {
+  const { before, strike, after } = thesis.titleZh;
+
   return (
     <Section eyebrow={thesis.eyebrow} pad="loose" className="bg-bg-elev/30">
-      <Reveal>
-        <p className="font-code text-sm tracking-[0.25em] text-accent">
-          {thesis.titleEn}
-        </p>
-      </Reveal>
       <Reveal delay={0.08}>
         <h2 className="mt-4 font-display text-4xl font-bold leading-tight md:text-6xl">
-          {thesis.titleZh}
+          {before}
+          <span className="inline-flex items-baseline gap-2 whitespace-nowrap">
+            <Grid2X2Check
+              className="inline-block h-[1em] w-[1em] shrink-0 translate-y-[0.12em] text-accent"
+              strokeWidth={1.75}
+              aria-hidden
+            />
+            <span className="text-accent">
+              {strike}
+            </span>
+          </span>
+          {after}
         </h2>
       </Reveal>
       <Reveal delay={0.16}>
@@ -32,7 +41,7 @@ export default function Thesis() {
             steps={thesis.newFlow.steps}
             tone="accent"
             highlightLast
-            label={`${thesis.newFlow.label} · 应该这样`}
+            label={`${thesis.newFlow.label} `}
           />
         </Reveal>
 
@@ -47,7 +56,7 @@ export default function Thesis() {
             <FlowDiagram
               steps={thesis.oldFlow.steps}
               tone="muted"
-              label={`${thesis.oldFlow.label} · 而不是`}
+              label={`${thesis.oldFlow.label} `}
             />
           </div>
         </Reveal>
