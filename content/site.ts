@@ -98,26 +98,26 @@ export const principles = {
       no: "01",
       en: "Visual First",
       zh: "画面感",
-      desc: "优先用低成本传达画面+文字。用户可以直接从想象中的场景开始创作。",
+      desc: "优先用低成本传达画面+文字。用户可以直接从想象中的场景开始创作",
     },
     {
       no: "02",
-      en: "Coherence",
-      zh: "连贯性",
-      desc: "考虑构建故事结构的起承转合",
+      en: "Direct Manipulation",
+      zh: "直接操作",
+      desc: "以分镜为操作锚点，减少 Prompt 依赖",
     },
     {
       no: "03",
-      en: "Direct Manipulation",
-      zh: "直接操作",
-      desc: "以分镜为操作锚点，减少 Prompt 依赖。",
+      en: "Coherence",
+      zh: "连贯性",
+      desc: "考虑构建故事结构的起承转合",
     },
   ],
 };
 
 // ── 方案：AI Storyboard First ──
 export const storyboard = {
-  eyebrow: "Solution · 方案设计",
+  eyebrow: "Solution · Demo1",
   kicker: "AI Storyboard First",
   title: { before: "AI直出线稿组，营造", highlight: " 画面感" },
   inputLabel: "用户输入一个简单想法，AI像导演一样生成图文并茂的故事板",
@@ -141,16 +141,21 @@ export const storyboard = {
 
 // ── 创新交互：故事节奏编辑器 ──
 export const rhythm = {
-  eyebrow: "Interaction · 创新交互",
-  kicker: "Story Rhythm Editing",
-  title: "直接编辑故事的节奏，而不是文字",
-  oldWay: ["编辑文字", "修改剧情", "重新生成"],
-  before: ["平静", "平静", "冲突", "高潮", "结局"],
-  after: ["平静", "冲突", "冲突", "高潮", "高潮", "结局"],
-  autoAdjust: ["镜头长度", "剧情密度", "对白节奏", "转场逻辑"],
-  closer: "用户操作的是故事节奏，而不是 Prompt。",
-  demoRatio: "16 / 9",
-  demoLabel: "节奏拖拽交互 Demo",
+  eyebrow: "Interaction · Demo2",
+  kicker: "Direct Manipulation",
+  title: { before: "拖拽分镜，", highlight: "直接操作", after: "故事节奏" },
+  benefits: [
+    "拖动镜头卡片即可重排叙事顺序，无需改写 Prompt",
+    "节奏变化自动联动时长、密度与转场",
+
+  ],
+  closer: "所见即所得，改的是故事节奏本身",
+  demoImage: {
+    src: "/images/solution/test2.jpg",
+    alt: "节奏编辑界面：拖拽分镜直接调整故事结构",
+    width: 3200,
+    height: 2074,
+  },
 };
 
 // ── 导演模式 ──
