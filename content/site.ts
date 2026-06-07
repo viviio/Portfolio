@@ -14,11 +14,11 @@ export const navItems = [
 // ── Hero ──
 export const hero = {
   eyebrow: "妙创 · 设计论述 / 2026",
-  titleLines: ["故事，", "不该从剧本开始"],
-  en: "Story Before Script",
-  sub: "Reimagining Story Creation in the Age of AI",
-  lead: "AI 已经会写剧本了，可我们仍被迫先写剧本。这是一次对创作流程的重新定义。",
-  scrollHint: "向下滚动",
+  titleLines: ["画面编排，", "是AI创作的线索:）"],
+  en: " ",
+  sub: " ",
+  lead: "AI时代创作流：迸发灵感，落笔文本，定格画面，转动态视频。然而，我们仍然在小输入框里跟提示词较劲。我开始思考一种对视频创作者更友好的交互探索。这是一次对创作流程的迭代尝试。",
+  scrollHint: "查看正文",
 };
 
 // ── 背景 ──
