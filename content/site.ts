@@ -3,7 +3,8 @@
 // 改文案只动这里，组件只负责呈现。
 // ══════════════════════════════════════════════════════════════
 
-// ── 顶部章节导航：四幕结构 ──
+// ── 顶部章节导航：四幕结构（id 须与页面 section 锚点一致）
+// intro→Background / insight→Thesis / solution→Storyboard / outro→Value
 export const navItems = [
   { id: "intro", label: "背景", index: "01" },
   { id: "insight", label: "洞察", index: "02" },

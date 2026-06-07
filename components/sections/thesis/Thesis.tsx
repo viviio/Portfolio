@@ -11,7 +11,7 @@ export default function Thesis() {
   const { before, strike, after } = thesis.titleZh;
 
   return (
-    <Section eyebrow={thesis.eyebrow} pad="loose" className="bg-bg-elev/30">
+    <Section id="insight" eyebrow={thesis.eyebrow} pad="loose" className="bg-bg-elev/30">
       <Reveal delay={0.08}>
         <h2 className="mt-4 font-display text-4xl font-bold leading-tight md:text-6xl">
           {before}

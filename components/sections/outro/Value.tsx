@@ -52,7 +52,7 @@ function Panel({
 
 export default function Value() {
   return (
-    <Section eyebrow={value.eyebrow} className="bg-bg-elev/30">
+    <Section id="outro" eyebrow={value.eyebrow} className="bg-bg-elev/30">
       <Reveal>
         <h2 className="font-display text-3xl font-semibold leading-snug md:text-[2.6rem]">
           {value.title}
